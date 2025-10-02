@@ -12,3 +12,8 @@ Implemented Geometric Brownian Motion (GBM) simulator (gbm.py) for stock price p
 Visualized sample GBM trajectories and verified lognormal distribution of terminal prices
 Built Monte Carlo European call option pricer (bs_pricing.py)
 Compared Monte Carlo results to Black–Scholes closed-form solution — confirmed agreement within 95% confidence interval
+
+**Day 3**
+Implemented Monte Carlo European push option pricer
+Implemented antithetics for the Monte Carlo Models
+Began work on Greeks section of code to explore how varying values change the simulation

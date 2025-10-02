@@ -153,8 +153,8 @@ if __name__ == "__main__":
 
     print (f"MC anthithetic call: {mc_c_aprice:.4f} +- {mc_c_ci:.4f} (95% CI)")
     print (f"MC antithetic put: {mc_p_aprice:.4f} +- {mc_p_ci:.4f} (95% CI)")
-
+    
 # Put-Call Parity
-lhs = bs_call - bs_put
-rhs = S0 - K * np.exp(-r*T)
-print(f"Parity check: LHS={lhs:.4f}, RHS={rhs:.4f}")
+    lhs = bs_call - bs_put
+    rhs = S0 - K * np.exp(-r*T)
+    print(f"Parity check: LHS={lhs:.4f}, RHS={rhs:.4f}")

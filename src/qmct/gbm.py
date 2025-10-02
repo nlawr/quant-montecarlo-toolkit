@@ -17,7 +17,7 @@ def gbm_paths(S0: float, mu: float, sigma: float, n_paths: int, n_steps: int, T:
     # cumulative sum of log returns
     log_S = np.cumsum(increments, axis=1)
 
-    # prepend zeros (so we start at log(50))
+    # prepend zeros (so we start at log(S0))
     log_S = np.concatenate([np.zeros((n_paths, 1)), log_S], axis=1)
 
     # exponentiate to get prices
@@ -35,7 +35,7 @@ def gbm_apaths(S0: float, mu: float, sigma: float, n_paths: int, n_steps: int, T
     dt= T/n_steps
 
     Z = np.random.randn(n_paths, n_steps)
-    Z_full = np.vstack([Z, -Z])
+    Z_full = np.vstack([Z, -Z])1
 
     increments = (mu - 0.5 * sigma**2) * dt + sigma * np.sqrt(dt) * Z_full
     log_S = np.cumsum(increments, axis=1)
