@@ -17,3 +17,9 @@ Compared Monte Carlo results to Black–Scholes closed-form solution — confirm
 Implemented Monte Carlo European push option pricer
 Implemented antithetics for the Monte Carlo Models
 Began work on Greeks section of code to explore how varying values change the simulation
+
+**Day 4**
+Added Delta, Gamma, Vega, Theta, and Rho Greeks to code
+Restructured greeks.py
+Added Monte Carlo delta bump
+
